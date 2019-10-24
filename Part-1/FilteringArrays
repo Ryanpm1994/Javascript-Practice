@@ -1,0 +1,22 @@
+//the for loops assign the letters H, C, D and S to numbers between 1, 13
+//the push function takes the assigned values and creates a array based off of them
+const cards = [];
+for(let suit of ['H', 'C', 'D', 'S'])
+	for(let value=1; value<=13; value++)
+		cards.push({suit, value});
+
+//logs all the information in console
+console.log(cards);
+
+//Creates a function that filters out all cards with the value directly equal to 2
+//console.log(cards.filter(c => c.value === 2));
+
+//Creates a function that filters out all cards with the suit directly equal to 'D' 
+//console.log(cards.filter(c => c.suit === 'D'));
+ 
+//Creates a function that filters out all cards with the value greater than 10 
+//console.log(cards.filter(c => c.value > 10));
+
+//Creates a function that filters out all cards with the value greater than 10 and a suit directly equal to 'H' 
+//console.log(cards.filter(c => c.value > 10 && c.suit === 'H'));
+
